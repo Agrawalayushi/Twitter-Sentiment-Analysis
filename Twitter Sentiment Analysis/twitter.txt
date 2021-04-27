@@ -1,0 +1,36 @@
+part 1 
+convert posts into dataframe
+ here the dataframe function will take all the posts , and then convert it into dataframe
+ it will have columns named - tweets , date ,retweets and likes
+ and then return this dataframe for further the sentiment analysis
+
+part 2
+clean data
+
+function : cleantxt which accepts the dataframe
+ now the data is being cleaned of 4 things , first of all ,all the @ followed by name are removed
+ secondly, all the hashtags are removed
+  then the retweet representation is also removed and 
+lastly all the hyperlinks are removed 
+because all of these extra data will not help in the recognition of a tweet as positive or negative
+
+part 3
+used textblob - main part
+now since the data is completely prepared for further implementations , 
+we use textblob lib to calculate the polarity and subjectivity of each tweet
+polarity is a float number which lies in the range -1 to 1 , and indicates positive/negative trait of text
+so 1 means a posoitive statement and -1 mean negative statement
+subjectivity is another property which basically determines the generalness of a particulated statement.
+it basically determines whether a statement is public one or a fact
+it lies in the range 0 -1 where if its more closer to 1 then it indicates that the statement is more of public opinion than a fact
+
+part 4
+and according to the polarity , we analysed the positive , negative and nuetral tweets
+using getAnalysis
+
+we further visualised our results using various methods which will be explained by gaurav.
+
+
+
+
+
